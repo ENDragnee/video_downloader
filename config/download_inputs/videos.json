@@ -1,29 +1,34 @@
 {
-  "build": {
+  "mage_build": {
     "name": "Mage Build",
     "videos": [
       {
         "name": "Beginner Guide For Mages",
-        "type": "video",
         "url": "https://youtu.be/IyXCHQAo2GE?si=DTijNTNB90ImCpqy"
       },
 
       {
         "name": "Mid-game Guide For Mages",
-        "type": "video",
         "url": "https://youtu.be/IyXCHQAo2GE?si=LRcLwf0O9vgqIZnv"
       },
 
       {
         "name": "Late-game Guide For Mages",
-        "type": "video",
         "url": "https://youtu.be/zSUkZtiycME?si=TOSdWYohtWJYPcZX"
       },
 
       {
         "name": "Armour set for Mages",
-        "type": "video",
         "url": "https://youtu.be/AkbKFm3iYq4?si=5K14ObNEtq0-OZUl"
+      }
+    ]
+  },
+  "walkthrough_playlist": {
+    "name": "Complete Walkthrough Playlist",
+    "playlists": [
+      {
+        "name": "Elden Ring Full Game Walkthrough Playlist",
+        "url": "https://youtube.com/playlist?list=PL7RtZMiaOk8gdRf130w4gFYyhstL-5VRh&si=43klI8u6fZWX-RDa"
       }
     ]
   }
