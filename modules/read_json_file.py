@@ -1,11 +1,6 @@
 import json
 import os
-from enum import Enum
-
-
-class ObjectType(Enum):
-    VIDEO = "videos"
-    PLAYLIST = "playlists"
+from schemas.object_type import ObjectType
 
 
 def read_json_file(file_path: str, category_name: str, object_type: ObjectType) -> list:
