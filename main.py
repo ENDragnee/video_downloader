@@ -3,6 +3,7 @@ import sys
 from modules.read_json_file import read_json_file
 from modules.download_videos import download_videos
 from modules.download_playlists import download_playlists
+from modules.downloader import downloader
 from dotenv import load_dotenv
 from schemas.object_type import ObjectType
 
@@ -26,7 +27,8 @@ if __name__ == "__main__":
                 playlist_list = read_json_file(
                     os.getenv("DEFAULT_INPUT_PATH"), sys.argv[2], ObjectType.PLAYLIST
                 )
-                download_playlists(playlist_list, sys.argv[2])
+                downloader(playlist_list, sys.argv[2], ObjectType.PLAYLIST)
+                # download_playlists(playlist_list, sys.argv[2])
             except IndexError:
                 print(
                     "Please provide a category for the playlists name after the flag."
@@ -39,7 +41,9 @@ if __name__ == "__main__":
                 video_list = read_json_file(
                     os.getenv("DEFAULT_INPUT_PATH"), sys.argv[2], ObjectType.VIDEO
                 )
-                download_videos(video_list, sys.argv[2])
+
+                downloader(video_list, sys.argv[2], ObjectType.VIDEO)
+                # download_videos(video_list, sys.argv[2])
             except IndexError:
                 print("Please provide a category name for the videos after the flag.")
                 sys.exit(1)
