@@ -2,6 +2,7 @@ from schemas.object_type import ObjectType
 import multiprocessing
 from functools import partial
 import yt_dlp
+import os
 
 
 def download_struct(item: dict, print_string: str, ydl_opts: dict) -> None:
@@ -36,7 +37,7 @@ def downloader(item_dict: dict, list_name: str, object_type: ObjectType) -> None
     else:
         raise ValueError("Invalid object type provided.")
 
-    with multiprocessing.Pool(4) as pool:
+    with multiprocessing.Pool(int(os.getenv("DEFAULT_POOL_SIZE"))) as pool:
         func = partial(download_struct, print_string=print_string, ydl_opts=ydl_opts)
         pool.map(
             func,
