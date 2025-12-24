@@ -31,5 +31,22 @@
         "url": "https://youtube.com/playlist?list=PL7RtZMiaOk8gdRf130w4gFYyhstL-5VRh&si=43klI8u6fZWX-RDa"
       }
     ]
+  },
+  "dawit_melese": {
+    "name": "Mistir",
+    "videos": [
+      {
+        "name": "Yam Yam",
+        "url": "https://youtu.be/dkskBSP_PDA?si=5w9Ky-T6atp4KIYl"
+      },
+      {
+        "name": "Hulem Hulem",
+        "url": "https://youtu.be/T7pVWoHNhNY?si=7PLGb2LwIkycaFP4"
+      },
+      {
+        "name": "Temechialesh",
+        "url": "https://youtu.be/u-57o_pMGbg?si=Gcf_nz3Bjq2i4hpq"
+      }
+    ]
   }
 }

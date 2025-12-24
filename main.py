@@ -1,11 +1,10 @@
 import os
 import sys
 from modules.read_json_file import read_json_file
-from modules.download_videos import download_videos
-from modules.download_playlists import download_playlists
 from modules.downloader import downloader
 from dotenv import load_dotenv
 from schemas.object_type import ObjectType
+
 
 load_dotenv()
 
