@@ -83,3 +83,5 @@ settings.local.py
 # macOS / Linux / Windows system files
 .DS_Store
 Thumbs.db
+
+videos.json
